@@ -56,10 +56,10 @@ data = df[['MPG', 'Cylinders', 'Displacement', 'Horsepower', 'Weight',
 'Acceleration', 'Model', 'label' ]]
 X_train, X_test = train_test_split( data ,test_size=0.1, random_state=42)
 
-train_bags   = X_train[ [ 'MPG', 'Cylinders','Horsepower', 'Weight', 'Model'] ]
+train_bags   = X_train[ [ 'MPG', 'Cylinders','Horsepower', 'Weight'] ]
 train_labels =  X_train[ ['label'] ]
 
-test_bags   = X_test[ [ 'MPG', 'Cylinders','Horsepower', 'Weight', 'Model'] ]
+test_bags   = X_test[ [ 'MPG', 'Cylinders','Horsepower', 'Weight'] ]
 test_labels = X_test[ ['label'] ]
 
 print (train_bags[:3])  # check first three data
